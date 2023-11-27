@@ -1,0 +1,72 @@
+
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    text-decoration: none;
+    transition: .2s;
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+section{ /*resizing the contents*/
+    padding: 2rem 7%;
+}
+
+.heading{ /*h1*/
+    text-align: center;
+    color: rgb(43, 1, 1);
+  
+    font-size: 4rem;
+    margin-bottom: 5rem;
+}
+
+.menu .box-container{
+    display: grid;
+
+    /*grid with a minimum of two columns, 
+    but will add more columns if there is enough space.
+    will be at least 30rem wide, 
+    The 1fr value tells the browser 
+    to distribute the remaining space equally among the columns*/
+    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    
+
+
+    /*set the spacing between grid items*/
+    gap: 1.5rem;
+}
+
+.menu .box-container .box{
+    padding: 5rem;
+    text-align: center;
+    background-color: rgb(43, 1, 1);
+}
+
+
+.menu .box-container .box h3{
+    color: #fff;
+    font-size: 2rem;
+    padding: 1rem 0;
+}
+
+.menu .box-container .box .price{
+    color: #fff;
+    font-size: 2.5rem;
+    padding: .5rem 0;
+}
+
+.menu .box-container .box:hover{
+    background-color: #d3ad7f;
+}
+
+.menu .box-container .box:hover > *{
+    color: black;
+}

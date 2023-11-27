@@ -1,0 +1,12 @@
+body{
+  /*img*/
+  background-image: url(image/home_img.jpg);
+
+  /* Center and scale the image nicely */
+  background-size: cover;
+  position: relative; 
+
+/*Text*/
+  font-family: Arial, Helvetica, sans-serif;
+
+}
